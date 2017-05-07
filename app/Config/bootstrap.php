@@ -113,3 +113,7 @@ CakeLog::config('error', array(
 if (Configure::read('debug') > 0) {
 	CakePlugin::load('DebugKit');	
 }
+
+/* Application setup */
+
+Configure::write("Application.title","Astro Online");
