@@ -117,3 +117,17 @@ if (Configure::read('debug') > 0) {
 /* Application setup */
 
 Configure::write("Application.title","Astro Online");
+
+Configure::write("Mail.FromAddress","www@ideia.cc");
+Configure::write("Mail.FromName","Astro Online");
+Configure::write("Mail.Port","465");
+Configure::write("Mail.User","www@ideia.cc");
+Configure::write("Mail.Password","www&!@767ideia_cc");
+Configure::write("Mail.SmtpHost","br718.hostgator.com.br");
+Configure::write("Mail.IsAuthenticated",true);
+Configure::write("Mail.Security","ssl");  /* Can be ssl or tls */
+
+/* Application level global Constants */
+
+define("USERCONFIRM_REGISTER_ACTIVATION", 1);
+define("USERCONFIRM_PASSWORD_RECOVER",2);

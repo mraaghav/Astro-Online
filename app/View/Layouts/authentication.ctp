@@ -127,6 +127,7 @@
 		<?php echo $this->Html->script('ace.min'); ?>
 
 		<!-- app scripts -->
+		<?php echo $this->Html->script('astro.base'); ?>
 		<?php echo $this->Html->script('astro.login'); ?>
 		
 	</body>

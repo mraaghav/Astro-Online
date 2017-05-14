@@ -118,8 +118,29 @@
 					<div class="space-6"></div>
 					<p> Entre as informa&ccedil;&otilde;es de perfil abaixo para se registrar: </p>
 
-					<form>
+					<form id="register" method="post" action="<?php echo $this->Html->url(["controller"=>"users","action"=>"register"]); ?>">
 						<fieldset>
+							<label class="block clearfix">
+								<span class="block input-icon input-icon-right">
+									<input type="name" class="form-control" name="name" placeholder="Nome" />
+									<i class="ace-icon fa fa-user"></i>
+								</span>
+							</label>
+							
+							<label class="block clearfix">
+								<span class="block input-icon input-icon-right">
+									<input type="birth" class="form-control" name="birth" placeholder="Data de Nascimento" />
+									<i class="ace-icon fa fa-birthday-cake"></i>
+								</span>
+							</label>
+							
+							<label class="block clearfix">
+								<span class="block input-icon input-icon-right">
+									<input type="birthplace" class="form-control" name="birthplace" placeholder="Local de Nascimento" />
+									<i class="ace-icon fa fa-map"></i>
+								</span>
+							</label>
+							
 							<label class="block clearfix">
 								<span class="block input-icon input-icon-right">
 									<input type="email" class="form-control" name="email" placeholder="E-mail" />
@@ -142,7 +163,7 @@
 							</label>
 
 							<label class="block">
-								<input type="checkbox" class="ace" />
+								<input type="checkbox" name="terms" class="ace" />
 								<span class="lbl">
 									Li e aceito os 
 									<a href="#">termos de uso</a>
@@ -157,7 +178,7 @@
 									<span class="bigger-110">Limpar</span>
 								</button>
 
-								<button type="button" class="width-65 pull-right btn btn-sm btn-success">
+								<button type="button" class="width-65 pull-right btn btn-sm btn-success btn-submit">
 									<span class="bigger-110">Continuar</span>
 
 									<i class="ace-icon fa fa-arrow-right icon-on-right"></i>
