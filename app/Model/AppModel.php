@@ -35,7 +35,7 @@ class AppModel extends Model {
 	}
 	
 	public function sendMailWithSource($fromName, $fromEmail, $toName, $toEmail, $subject, $content) {
-		$appTitle = Configure::write("Application.title");
+		$appTitle = Configure::read("Application.title");
 		
 		$mail = $this->prepareMailer();
 		$mail->setFrom($fromEmail, $fromName);

@@ -17,6 +17,8 @@ class UsersController extends AppController {
 								 "register_confirm",
 								 "login",
 								 "logout",
+								 "password_recover",
+								 "password_recover_confirm"
 			                    ));
 	}
 	
@@ -93,6 +95,68 @@ class UsersController extends AppController {
 				$result = $UserConfirmTable->delete($UserConfirm["UserConfirm"]["id"]);
 			}
 			
+			$this->set("result",$result);
+		}
+	}
+	
+	public function password_recover()
+	{
+		$this->layout = "authentication";
+		$data = $this->request->data;
+		
+		if ($this->request->is(['patch', 'post', 'put'])) {
+			$email = $this->request->data["email"];
+			$user = $this->User->find("first",array("conditions"=>array("email"=>$email)));
+			
+			if($user) {
+				App::uses('UserConfirm', 'Model');
+				$userConfirmTable = new UserConfirm();
+				if($userConfirmTable->generateUserConfirm($user["User"]["id"], USERCONFIRM_PASSWORD_RECOVER))	
+					$this->Flash->success(__('Foi enviada uma mensagem para este e-mail. Siga as instruções da mensagem para redefinir a sua senha de cadastro.'));
+				else
+					$this->Flash->error(__('Ocorreu um erro no processo de recuperar a senha de cadastro. Por favor, entre em contato com a administração a partir do formulário de contato.'));
+			} else {
+				
+				$this->Flash->error(__('Não foi encontrada nenhuma conta cadastrada com este e-mail.'));
+				
+			}
+
+		}
+	}
+
+	public function password_recover_confirm($id = null)
+	{
+		$this->layout = "authentication";
+				
+		if($id !== NULL)
+		{
+			App::uses('UserConfirm', 'Model');
+			$UserConfirmTable = new UserConfirm();
+			$UserConfirm = $UserConfirmTable->find("first",array("conditions"=>array("confcode"=>$id,"confirm_type"=>USERCONFIRM_PASSWORD_RECOVER)));
+			
+			if($UserConfirm == null)
+			{
+				$result = false;
+			}
+			else 
+			{
+				if ($this->request->is(['patch', 'post', 'put'])) {
+					
+					$user = $this->User->find("first",array("conditions"=>array("id"=>$UserConfirm["UserConfirm"]["users_id"])));
+					$user["User"]["psw"] = $this->request->data["User"]["psw"];
+					$this->User->save($user);
+					$result = $UserConfirmTable->deleteAll(array("users_id"=>$user["User"]["id"],"confirm_type"=>USERCONFIRM_PASSWORD_RECOVER));
+					
+					if($result)
+						$this->set("saved",true);
+					
+				} else {
+					$result = true;
+						
+				}
+			}
+			
+			$this->set("code",$id);
 			$this->set("result",$result);
 		}
 	}

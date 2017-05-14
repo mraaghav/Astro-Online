@@ -14,7 +14,7 @@ class UserConfirm extends AppModel
 	{
 		$appTitle = Configure::read("Application.title");
 		$userTable = new User();
-		$user = $userTable->find("first",array("conditions"=>array("User.id" => $data["users_id"])));
+		$user = $userTable->find("first",array("conditions"=>array("User.id" => $data["user_id"])));
 		
 		$url = Router::url(array('controller' => 'Users', 'action' => 'password_recover_confirm',$data["confcode"]),true);
 		

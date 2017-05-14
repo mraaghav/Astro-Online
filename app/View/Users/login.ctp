@@ -79,19 +79,19 @@
 						Informe seu e-mail e siga as instru&ccedil;&otilde;es que ser&atilde;o enviadas
 					</p>
 
-					<form>
+					<form id="password_recover" method="post" action="<?php echo $this->Html->url(["controller"=>"users","action"=>"password_recover"]); ?>">
 						<fieldset>
 							<label class="block clearfix">
 								<span class="block input-icon input-icon-right">
-									<input type="email" class="form-control" placeholder="E-mail" />
+									<input type="email" name="email" class="form-control" placeholder="E-mail" />
 									<i class="ace-icon fa fa-envelope"></i>
 								</span>
 							</label>
 
 							<div class="clearfix">
-								<button type="button" class="width-35 pull-right btn btn-sm btn-danger">
+								<button type="button" class="width-35 pull-right btn btn-sm btn-danger btn-submit">
 									<i class="ace-icon fa fa-lightbulb-o"></i>
-									<span class="bigger-110">Me envie!</span>
+									<span class="bigger-110">Redefinir</span>
 								</button>
 							</div>
 						</fieldset>
