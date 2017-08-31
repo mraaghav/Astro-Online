@@ -3,23 +3,28 @@
 /vendor/*
 /config/app.php
 
-/tmp/cache/models/*
-!/tmp/cache/models/empty
-/tmp/cache/persistent/*
-!/tmp/cache/persistent/empty
-/tmp/cache/views/*
-!/tmp/cache/views/empty
-/tmp/sessions/*
-!/tmp/sessions/empty
-/tmp/tests/*
-!/tmp/tests/empty
+/tool/tmp/cache/models/*
+!/tool/tmp/cache/models/empty
+/tool/tmp/cache/persistent/*
+!/tool/tmp/cache/persistent/empty
+/tool/tmp/cache/views/*
+!/tool/tmp/cache/views/empty
+/tool/tmp/sessions/*
+!/tool/tmp/sessions/empty
+/tool/tmp/tests/*
+!/tool/tmp/tests/empty
 
-/logs/*
-!/logs/empty
+/tool/logs/*
+!/tool/logs/empty
 
 # CakePHP 2
 
-/app/tmp/*
-/app/Config/core.php
-/app/Config/database.php
-/vendors/*
+/tool/app/tmp/*
+/tool/app/Config/core.php
+/tool/app/Config/database.php
+/tool/vendors/*
+
+# Apache 
+error.log
+request.log
+*.log
