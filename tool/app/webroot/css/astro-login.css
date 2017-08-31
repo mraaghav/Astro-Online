@@ -1,8 +1,13 @@
 body.login-layout {
 	background-color: #ffffff;
-	
+
 }
 
 body.login-layout .page-content {
 	background-color: #ffffff;
+}
+
+.login-container {
+		min-width: 375px;
+    width: 50%;
 }
