@@ -1,5 +1,5 @@
 <div class="login-container">
-									
+
 	<div class="position-relative">
 		<div id="login-box" class="login-box visible widget-box no-border">
 			<div class="widget-body">
@@ -45,7 +45,7 @@
 						</fieldset>
 					</form>
 
-					
+
 				</div><!-- /.widget-main -->
 
 				<div class="toolbar clearfix">
@@ -126,21 +126,21 @@
 									<i class="ace-icon fa fa-user"></i>
 								</span>
 							</label>
-							
+
 							<label class="block clearfix">
 								<span class="block input-icon input-icon-right">
-									<input type="birth" class="form-control" name="birth" placeholder="Data de Nascimento" />
+									<input type="birth" class="form-control date-picker" name="birth" placeholder="Data de Nascimento" />
 									<i class="ace-icon fa fa-birthday-cake"></i>
 								</span>
 							</label>
-							
+
 							<label class="block clearfix">
 								<span class="block input-icon input-icon-right">
 									<input type="birthplace" class="form-control" name="birthplace" placeholder="Local de Nascimento" />
 									<i class="ace-icon fa fa-map"></i>
 								</span>
 							</label>
-							
+
 							<label class="block clearfix">
 								<span class="block input-icon input-icon-right">
 									<input type="email" class="form-control" name="email" placeholder="E-mail" />
@@ -165,7 +165,7 @@
 							<label class="block">
 								<input type="checkbox" name="terms" class="ace" />
 								<span class="lbl">
-									Li e aceito os 
+									Li e aceito os
 									<a href="#">termos de uso</a>
 								</span>
 							</label>
@@ -194,9 +194,9 @@
 						Voltar para autentica&ccedil;&atilde;o
 					</a>
 				</div>
-				
+
 			</div><!-- /.widget-body -->
 		</div><!-- /.signup-box -->
 	</div><!-- /.position-relative -->
-	
+
 </div>

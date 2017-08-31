@@ -265,3 +265,30 @@ Request URL: /img/cake.power.gif
 Stack Trace:
 #0 /home/diego/Workspace/Astro-Online/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2017-08-31 17:39:38 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /tool/home
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:39:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /tool/css/cake.generic.css
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:39:39 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /tool/img/cake.power.gif
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
