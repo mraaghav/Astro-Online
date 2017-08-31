@@ -10,6 +10,7 @@
 
 		<!-- bootstrap & fontawesome -->
 		<?php echo $this->Html->css('bootstrap.min'); ?>
+		<?php echo $this->Html->css('bootstrap-datepicker3.min'); ?>
 		<?php echo $this->Html->css('font-awesome.min'); ?>
 
 		<!-- page specific plugin styles -->
@@ -34,23 +35,23 @@
 
 		<!-- ace settings handler -->
 		<?php echo $this->Html->script('ace-extra.min'); ?>
-		
+
 		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
 
 		<!--[if lte IE 8]>
 		<?php echo $this->Html->script('html5shiv.min'); ?>
 		<?php echo $this->Html->script('respond.min'); ?>
 		<![endif]-->
-		
+
 		<!-- App level styles -->
 		<?php echo $this->Html->css('astro-login'); ?>
-		
+
 		<?php
 			echo $this->fetch('meta');
 			echo $this->fetch('css');
 			echo $this->fetch('script');
 		?>
-		
+
 	</head>
 
 	<body class="login-layout">
@@ -65,7 +66,7 @@
 						</small>
 					</a>
 				</div>
-				
+
 			</div><!-- /.navbar-container -->
 		</div>
 
@@ -78,7 +79,7 @@
 				<div class="main-content-inner">
 
 					<div class="page-content">
-							
+
 						<div class="row">
 							<div class="col-sm-10 col-sm-offset-1">
 								<?php echo $this->Flash->render(); ?>
@@ -103,17 +104,18 @@
 		<!--[if IE]>
 		<script src="js/jquery-1.11.3.min.js"></script>
 		<![endif]-->
-		
+
 		<script type="text/javascript">
 			if('ontouchstart' in document.documentElement) document.write("<script src='js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
 		</script>
-		<?php echo $this->Html->script('bootstrap.min'); ?>
-		
-		<!-- page specific plugin scripts -->
 
 		<!--[if lte IE 8]>
 		  <?php echo $this->Html->script('excanvas.min'); ?>
 		<![endif]-->
+
+ 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaIeJ-3I6-VFWRTARSYmnvuHdxAdg7qlo&libraries=places"></script>
+
+		<!-- Jquery UI -->
 		<?php echo $this->Html->script('jquery-ui.custom.min'); ?>
 		<?php echo $this->Html->script('jquery.ui.touch-punch.min'); ?>
 		<?php echo $this->Html->script('jquery.easypiechart.min'); ?>
@@ -121,7 +123,13 @@
 		<?php echo $this->Html->script('jquery.flot.min'); ?>
 		<?php echo $this->Html->script('jquery.flot.pie.min'); ?>
 		<?php echo $this->Html->script('jquery.flot.resize.min'); ?>
-		
+		<?php echo $this->Html->script('locationpicker.jquery.min'); ?>
+
+		<!-- bootstrap -->
+		<?php echo $this->Html->script('bootstrap.min'); ?>
+		<?php echo $this->Html->script('bootstrap-datepicker.min'); ?>
+		<?php echo $this->Html->script('bootstrap-datepicker.pt'); ?>
+
 		<!-- ace scripts -->
 		<?php echo $this->Html->script('ace-elements.min'); ?>
 		<?php echo $this->Html->script('ace.min'); ?>
@@ -129,6 +137,6 @@
 		<!-- app scripts -->
 		<?php echo $this->Html->script('astro.base'); ?>
 		<?php echo $this->Html->script('astro.login'); ?>
-		
+
 	</body>
 </html>

@@ -136,7 +136,8 @@
 
 							<label class="block clearfix">
 								<span class="block input-icon input-icon-right">
-									<input type="birthplace" class="form-control" name="birthplace" placeholder="Local de Nascimento" />
+									<div class="location-picker"></div>
+									<input type="text" class="form-control" id="birthplace" name="birthplace" placeholder="Local de Nascimento" />
 									<i class="ace-icon fa fa-map"></i>
 								</span>
 							</label>

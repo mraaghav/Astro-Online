@@ -1,3 +1,7 @@
+.location-picker {
+	width: 100%;
+	min-height: 300px;
+}
 body.login-layout {
 	background-color: #ffffff;
 
