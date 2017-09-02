@@ -11,8 +11,9 @@
 
 					<div class="space-6"></div>
 
-					<form>
+					<?php echo $this->Form->create('user'); ?>
 						<fieldset>
+
 							<label class="block clearfix">
 								<span class="block input-icon input-icon-right">
 									<input type="email" class="form-control" placeholder="E-mail" />
@@ -43,7 +44,7 @@
 
 							<div class="space-4"></div>
 						</fieldset>
-					</form>
+					<?php echo $this->Form->end(); ?>
 
 
 				</div><!-- /.widget-main -->
@@ -118,60 +119,85 @@
 					<div class="space-6"></div>
 					<p> Entre as informa&ccedil;&otilde;es de perfil abaixo para se registrar: </p>
 
-					<form id="register" method="post" action="<?php echo $this->Html->url(["controller"=>"users","action"=>"register"]); ?>">
+					<?php echo $this->Form->create('user',array("id"=>"register","url"=>array("controller"=>"users","action"=>"register"))); ?>
 						<fieldset>
-							<label class="block clearfix">
-								<span class="block input-icon input-icon-right">
-									<input type="name" class="form-control" name="name" placeholder="Nome" />
-									<i class="ace-icon fa fa-user"></i>
-								</span>
-							</label>
 
-							<label class="block clearfix">
-								<span class="block input-icon input-icon-right">
-									<input type="birth" class="form-control date-picker" name="birth" placeholder="Data de Nascimento" />
-									<i class="ace-icon fa fa-birthday-cake"></i>
-								</span>
-							</label>
+							<?php echo $this->Form->input('name',array("class"=>"form-control",
+																												 "placeholder"=>__("Nome"),
+																												 "after"=>'<i class="ace-icon fa fa-user"></i>',
+																											 	 "label"=>false,
+																												 "data-min-length"=>"5",
+																												 "data-max-length"=>"200",
+																											 	 "div"=>array(
+																												 		"class"=>"block input-icon input-icon-right"
+																											 	 ))); ?>
 
-							<label class="block clearfix">
-								<span class="block input-icon input-icon-right">
-									<div class="location-picker"></div>
-									<input type="text" class="form-control" id="birthplace" name="birthplace" placeholder="Local de Nascimento" />
-									<i class="ace-icon fa fa-map"></i>
-								</span>
-							</label>
+						 <?php echo $this->Form->input('birth',array("class"=>"form-control date-picker mask-date",
+																												 "placeholder"=>__("Data de Nascimento"),
+																												 "after"=>'<i class="ace-icon fa fa-birthday-cake"></i>',
+																											 	 "label"=>false,
+																											 	 "div"=>array(
+																												 		"class"=>"block input-icon input-icon-right"
+																											 	 ))); ?>
 
-							<label class="block clearfix">
-								<span class="block input-icon input-icon-right">
-									<input type="email" class="form-control" name="email" placeholder="E-mail" />
-									<i class="ace-icon fa fa-envelope"></i>
-								</span>
-							</label>
+						 <?php echo $this->Form->input('birthplace-latitude',array("type"=>"hidden","id"=>"birthplaceLatitude")); ?>
 
-							<label class="block clearfix">
-								<span class="block input-icon input-icon-right">
-									<input type="password" name="password" class="form-control" placeholder="Senha" />
-									<i class="ace-icon fa fa-lock"></i>
-								</span>
-							</label>
+						 <?php echo $this->Form->input('birthplace-longitude',array("type"=>"hidden","id"=>"birthplaceLongitude")); ?>
 
-							<label class="block clearfix">
-								<span class="block input-icon input-icon-right">
-									<input type="password" name="password_confirm" class="form-control" placeholder="Confirma&ccedil;&atilde;o de senha" />
-									<i class="ace-icon fa fa-retweet"></i>
-								</span>
-							</label>
+						 <?php echo $this->Form->input('birthplace',array("class"=>"form-control",
+																												 "placeholder"=>__("Local de Nascimento"),
+																												 "after"=>'<div class="location-picker"></div>',
+																												 "before"=>'<i class="ace-icon fa fa-map"></i>',
+																											 	 "label"=>false,
+																												 "id"=>"birthplace",
+																											 	 "div"=>array(
+																												 		"class"=>"block input-icon input-icon-right"
+																											 	 ))); ?>
 
-							<label class="block">
-								<input type="checkbox" name="terms" class="ace" />
-								<span class="lbl">
-									Li e aceito os
-									<a href="#">termos de uso</a>
-								</span>
-							</label>
+						 <?php echo $this->Form->input('email',array("class"=>"form-control",
+						 																						 "type"=>"email",
+																												 "data-min-length"=>"4",
+																												 "data-max-length"=>"150",
+																												 "placeholder"=>__("E-mail"),
+																												 "after"=>'<i class="ace-icon fa fa-envelope"></i>',
+																											 	 "label"=>false,
+																											 	 "div"=>array(
+																												 		"class"=>"block input-icon input-icon-right"
+																											 	 ))); ?>
 
-							<div class="space-24"></div>
+					 <?php echo $this->Form->input('password',array("class"=>"form-control",
+					 																						 "type"=>"password",
+																											 "data-min-length"=>"7",
+																											 "data-max-length"=>"30",
+																											 "placeholder"=>__("Senha"),
+																											 "after"=>'<i class="ace-icon fa fa-lock"></i>',
+																										 	 "label"=>false,
+																										 	 "div"=>array(
+																											 		"class"=>"block input-icon input-icon-right"
+																										 	 ))); ?>
+
+
+ 					 <?php echo $this->Form->input('password_confirm',array("class"=>"form-control",
+ 					 																						 "type"=>"password",
+																											 "data-min-length"=>"7",
+ 																											 "placeholder"=>__("Confirmação de senha"),
+ 																											 "after"=>'<i class="ace-icon fa fa-retweet"></i>',
+ 																										 	 "label"=>false,
+ 																										 	 "div"=>array(
+ 																											 		"class"=>"block input-icon input-icon-right"
+ 																										 	 ))); ?>
+
+					 <?php echo $this->Form->input('terms',array("class"=>"form-control",
+					 																						 "type"=>"checkbox",
+																											 "class"=>"ace",
+																											 "after"=>"<span class='lbl'>" . __("Li e aceito os ") . "<a href='#'>" . __("termos de uso") . "</a></span>",
+																											 "label"=>false,
+																											 "value"=>"0",
+																											 "checked"=>false,
+																											 "div"=>array(
+																												 "class"=>"block"
+																											 )
+																				 )); ?>
 
 							<div class="clearfix">
 								<button type="reset" class="width-30 pull-left btn btn-sm">
@@ -179,14 +205,14 @@
 									<span class="bigger-110">Limpar</span>
 								</button>
 
-								<button type="button" class="width-65 pull-right btn btn-sm btn-success btn-submit">
+								<button type="submit" class="width-65 pull-right btn btn-sm btn-success btn-submit">
 									<span class="bigger-110">Continuar</span>
-
 									<i class="ace-icon fa fa-arrow-right icon-on-right"></i>
 								</button>
+
 							</div>
 						</fieldset>
-					</form>
+					<?php echo $this->Form->end(); ?>
 				</div>
 
 				<div class="toolbar center">

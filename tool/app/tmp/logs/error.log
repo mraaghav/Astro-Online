@@ -472,3 +472,240 @@ Request URL: /tool/js/jquery.min.map
 Stack Trace:
 #0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2017-09-02 17:46:44 Error: [ParseError] syntax error, unexpected ';', expecting ',' or ')'
+Request URL: /tool/Users/login
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/lib/Cake/View/View.php(933): View->_evaluate('/home/diego/Wor...', Array)
+#1 /home/diego/Workspace/Astro-Online/tool/lib/Cake/View/View.php(473): View->_render('/home/diego/Wor...')
+#2 /home/diego/Workspace/Astro-Online/tool/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/diego/Workspace/Astro-Online/tool/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/diego/Workspace/Astro-Online/tool/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-09-02 17:46:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /tool/css/cake.generic.css
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 17:46:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /tool/img/cake.power.gif
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 17:46:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /tool/img/cake.power.gif
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 17:46:55 Error: [ParseError] syntax error, unexpected '<', expecting end of file
+Request URL: /tool/Users/login
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/lib/Cake/View/View.php(933): View->_evaluate('/home/diego/Wor...', Array)
+#1 /home/diego/Workspace/Astro-Online/tool/lib/Cake/View/View.php(473): View->_render('/home/diego/Wor...')
+#2 /home/diego/Workspace/Astro-Online/tool/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/diego/Workspace/Astro-Online/tool/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/diego/Workspace/Astro-Online/tool/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-09-02 17:46:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /tool/css/cake.generic.css
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 17:46:58 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /tool/img/cake.power.gif
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 17:48:35 Error: [ParseError] syntax error, unexpected '"div"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /tool/Users/login
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/lib/Cake/View/View.php(933): View->_evaluate('/home/diego/Wor...', Array)
+#1 /home/diego/Workspace/Astro-Online/tool/lib/Cake/View/View.php(473): View->_render('/home/diego/Wor...')
+#2 /home/diego/Workspace/Astro-Online/tool/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/diego/Workspace/Astro-Online/tool/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/diego/Workspace/Astro-Online/tool/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-09-02 17:48:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /tool/css/cake.generic.css
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 17:48:35 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /tool/img/cake.power.gif
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 17:48:35 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /tool/img/cake.power.gif
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 18:26:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /tool/js/jquery.min.map
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 18:28:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /tool/js/jquery.min.map
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 18:31:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /tool/js/jquery.min.map
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 18:34:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /tool/js/jquery.min.map
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 18:35:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /tool/js/jquery.min.map
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:14:07 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /tool/js/jquery.min.map
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:18:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /tool/js/jquery.min.map
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:18:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /tool/js/jquery.min.map
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:19:20 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /tool/js/jquery.min.map
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:19:44 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /tool/js/jquery.min.map
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:22:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /tool/js/jquery.min.map
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:26:22 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /tool/js/jquery.min.map
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:26:28 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /tool/js/jquery.min.map
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:27:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /tool/js/jquery.min.map
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:31:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /tool/js/jquery.min.map
+Stack Trace:
+#0 /home/diego/Workspace/Astro-Online/tool/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

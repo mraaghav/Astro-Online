@@ -15,3 +15,12 @@ body.login-layout .login-container {
 		min-width: 375px;
     width: 50%;
 }
+
+form fieldset div.block {
+	margin-bottom: 11px;
+}
+
+form#register fieldset div.block i.fa-map {
+	position: absolute;
+	bottom: 5px;
+}

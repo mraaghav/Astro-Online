@@ -123,6 +123,7 @@
 		<?php echo $this->Html->script('jquery.flot.min'); ?>
 		<?php echo $this->Html->script('jquery.flot.pie.min'); ?>
 		<?php echo $this->Html->script('jquery.flot.resize.min'); ?>
+		<?php echo $this->Html->script('jquery.maskedinput.min'); ?>
 		<?php echo $this->Html->script('locationpicker.jquery.min'); ?>
 
 		<!-- bootstrap -->
@@ -135,6 +136,7 @@
 		<?php echo $this->Html->script('ace.min'); ?>
 
 		<!-- app scripts -->
+		<?php echo $this->Html->script('astro.functions'); ?>
 		<?php echo $this->Html->script('astro.base'); ?>
 		<?php echo $this->Html->script('astro.login'); ?>
 
